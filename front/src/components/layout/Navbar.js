@@ -16,7 +16,7 @@ const Navbar = ({
 
   const authLinks = (
     <>
-      <li className='login-register'><Link  style={{color: "white"}} to='/my-account'>It's You</Link>/</li>
+      <li className='login-register'><Link  style={{color: "black"}} to='/my-account'>It's You</Link>/</li>
       <li className='login-register' onClick={() => logout()}>Logout</li>
       <li onClick={toggleSideCart} className='cart-div'>
         <FiShoppingCart className='icon' /><span className='qty'>{cartItemQty}</span>
@@ -26,8 +26,8 @@ const Navbar = ({
 
   const guestLinks = (
     <>
-      <li className='login-register'><Link  style={{color: "white"}} to='/my-account/login'>Login</Link>/</li>
-      <li className='login-register'><Link  style={{color: "white"}} to='/my-account/register'>Register</Link></li>
+      <li className='login-register'><Link  style={{color: "black"}} to='/my-account/login'>Login</Link>/</li>
+      <li className='login-register'><Link  style={{color: "black"}} to='/my-account/register'>Register</Link></li>
       <li onClick={toggleSideCart} className='cart-div'>
         <FiShoppingCart className='icon' /><span className='qty'>{cartItemQty}</span>
       </li>
@@ -38,8 +38,8 @@ const Navbar = ({
     < >
       <NavbarStyled>
         <NavStyled >
-          <li><Link  style={{color: "white"}} to='/'>Home</Link></li>
-          <li><Link  style={{color: "white"}} to='/shop'>Shop</Link></li>
+          <li><Link  style={{color: "black"}} to='/'>Home</Link></li>
+          <li><Link  style={{color: "black"}} to='/shop'>Shop</Link></li>
             {/* search component */}
         <div
           style={{
@@ -64,7 +64,7 @@ const Navbar = ({
 
         </NavStyled>
         <LogoStyled>
-          <Link to='/' style={{marginRight:"220px"}}><img style={{height :"100px" , width:"250px" , marginTop:"20px"}} src ="https://www.lava.ai/images/img-LAVA-Logo.png"  alt ="logo"/></Link>
+          <Link to='/' style={{marginRight:"220px"}}><img style={{height :"100px" , width:"250px" , marginTop:"20px"}} src ="https://freepngimg.com/download/logo/86082-logo-brand-green-grab-text-free-photo-png.png"  alt ="logo"/></Link>
         </LogoStyled>
         <LogInAndCart>
           {!loading && isAuthenticated ? authLinks : guestLinks}
@@ -79,8 +79,8 @@ const Navbar = ({
 const NavbarStyled = styled.nav`
   height: 7rem;
   display: flex;
-  background-color: var(--dark-clr);
-  color: var(--light-clr);
+  background-color: var(--fainter-grey);
+  color: var(--fainter-grey);
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;

@@ -29,7 +29,7 @@ app.use('/api/v1/products', productRouter);
 app.use('/api/v1/reviews', reviewRouter);
 app.use('/api/v1/Purchases', purchaseRouter);
 //CONNECT TO THE DATABASE
-mongoose.connect("mongodb://localhost:27017/lavaa", {
+mongoose.connect("mongodb+srv://user:1234@cluster0.b1tx0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
  useCreateIndex: true, 
   useNewUrlParser: true,
   useUnifiedTopology: true,

@@ -8,7 +8,7 @@ const adminBro = new AdminBro({
   databases: [mongoose],
   rootPath: '/admin',
   branding: {
-    companyName: 'fares Admin dashboard',
+    companyName: 'firas Admin dashboard',
   },
   dashboard: {
     handler: async () => {
@@ -16,8 +16,8 @@ const adminBro = new AdminBro({
     },
 }})
 const ADMIN ={
-    email:'lavaa@gmail.com',
-    password:'ahla'
+    email:'firas@gmail.com',
+    password:'1234'
 }
 const router = AdminBroExpress.buildAuthenticatedRouter(adminBro,{
     cookieName:'adminbro',

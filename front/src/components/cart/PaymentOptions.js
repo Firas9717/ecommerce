@@ -23,7 +23,7 @@ const PaymentOptions = ({ item}) => {
         <h3>cart totals</h3>
         <div className='receipt'>
           <div className='receipt-content'>
-            <span>Subtotal</span>
+            <span>Sub total</span>
             <span>{subtotalCalc.toFixed(2)}</span>
           </div>
          
